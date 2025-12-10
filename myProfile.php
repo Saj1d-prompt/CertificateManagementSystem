@@ -60,7 +60,6 @@ if ($result->num_rows > 0) {
             <div class="profile-section">
                 <div class="section-title">
                     <h3>Personal Information</h3>
-                    <span class="verified-badge">Verified</span>
                 </div>
                 <div class="info-grid">
                     <div class="info-item">

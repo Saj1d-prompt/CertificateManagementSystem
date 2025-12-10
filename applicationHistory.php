@@ -51,7 +51,7 @@ $result = $conn->query($sql);
             <a href="reissueCertificate.php">Reissue Application</a>
             <a href="correctionApplication.php">Correction Application</a>
             <a href="applicationHistory.php">Application History</a>
-            <!-- <a href="#">Update Profile</a> -->
+            <a href="myProfile.php">My Profile</a>
             <a href="logout.php">Logout</a>
         </nav>
     </header>

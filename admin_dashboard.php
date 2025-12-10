@@ -97,27 +97,6 @@ $new_students_result = $conn->query("SELECT name, email, created_at FROM users W
             </div>
         </div>
 
-        <!-- <div class="actions">
-            <h2>Management Links</h2>
-            <div class="actions-section">
-                <a href="viewCertificateApplication.php" class="action-box">
-                    <h4>Manage New Applications</h4>
-                    <p>View and process all pending new certificate requests.</p>
-                </a>
-                <a href="viewReissue.php" class="action-box">
-                    <h4>Manage Reissue Requests</h4>
-                    <p>Review and process all pending reissue requests.</p>
-                </a>
-                <a href="viewCorrectionApplication.php" class="action-box">
-                    <h4>Manage Corrections</h4>
-                    <p>Review and process all pending correction requests.</p>
-                </a>
-                <a href="studentListView.php" class="action-box">
-                    <h4>View All Students</h4>
-                    <p>View a complete list of all registered student records.</p>
-                </a>
-            </div>
-        </div> -->
 
         <div class="records">
             <div class="info">
