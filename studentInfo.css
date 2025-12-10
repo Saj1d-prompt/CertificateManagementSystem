@@ -1,0 +1,115 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px 0;
+    margin: 0;
+}
+
+ .container {
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 12px;
+    width: 650px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.container h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.container h3 {
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+p {
+    text-align: center;
+    color: #555;
+    line-height: 1.6;
+}
+
+.record-selection {
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.record-selection label {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #495057;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.record-selection input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.2); 
+}
+
+.form-section {
+    display: none; 
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    margin-top: 20px;
+    background-color: #fdfdfd;
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #34495e;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+} 
+
+
+button {
+    width: 95%;
+    padding: 12px;
+    margin-top: 15px;
+    background: #007bff;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+

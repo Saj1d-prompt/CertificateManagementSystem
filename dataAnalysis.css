@@ -1,0 +1,142 @@
+/* --- General Body and Page Styles --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6; /* Updated background color as requested */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #34495e; 
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header img {
+    height: 50px; 
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 5px 0;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s, border-bottom-color 0.3s;
+}
+
+nav a:hover{ 
+    color: #1abc9c;
+    border-bottom-color: #1abc9c;
+}
+
+/* --- Main Content Area --- */
+.admin-container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 40px auto;
+    /* Ensure container itself doesn't shrink unnecessarily */
+    box-sizing: border-box; 
+}
+
+.admin-container h1 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+/* --- Charts Grid - Adjusted to 2 columns --- */
+.charts-grid.two-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px;
+    align-items: start; /* Align items to the start of the grid cell */
+    width: 100%; /* --- ADDED: Ensure grid takes full width of its container --- */
+    box-sizing: border-box; /* Include padding/borders in width calculation */
+}
+
+.chart-container {
+    background: #ffffff;
+    padding: 20px; /* Reduced padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box; /* Include padding/borders in width calculation */
+}
+
+/* --- Styles for small container --- */
+.chart-container.small {
+     max-height: 350px; 
+     overflow: hidden; 
+}
+.chart-container.small canvas {
+    max-height: 280px; 
+}
+
+
+.chart-container.large {
+     min-height: 400px; 
+}
+
+.chart-container h3 {
+    margin-top: 0;
+    margin-bottom: 15px; 
+    color: #2c3e50;
+    text-align: center;
+    font-size: 1.1em; 
+}
+
+/* Ensure canvas takes available space but respects container */
+.chart-container canvas {
+    max-width: 100%;
+    /* Let height be controlled by container or specific class */
+}
+
+
+/* Notice for missing data */
+.chart-notice {
+    text-align: center;
+    color: #7f8c8d;
+    font-style: italic;
+    margin-top: 50px; 
+    flex-grow: 1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 1200px) {
+    .charts-grid.two-columns {
+        grid-template-columns: 1fr;
+    }
+    .chart-container.small {
+        max-height: none; 
+        min-height: 350px; 
+    }
+    .chart-container.small canvas {
+        max-height: none; 
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+    nav {
+        /* Removed border-top for consistency with user styles */
+        padding-top: 15px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
