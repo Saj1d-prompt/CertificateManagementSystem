@@ -66,6 +66,10 @@ nav a:hover {
     border-left: 5px solid #3498db;
     transition: transform 0.3s, box-shadow 0.3s;
 }
+.count-box:nth-child(1) { border-left-color: #3498db; } /* Blue */
+.count-box:nth-child(2) { border-left-color: #27ae60; } /* Yellow/Orange */
+.count-box:nth-child(3) { border-left-color: #e74c3c; } /* Red */
+
 .count-box:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(0,0,0,0.1);
